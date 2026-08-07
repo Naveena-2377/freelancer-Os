@@ -1,16 +1,40 @@
-# React + Vite
+# FreelancerOS
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal CRM and business operating system for freelancers — built to track clients, projects, tasks, calendar, time, invoices, and knowledge all in one place.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Clients** — contact details, notes, service type tagging
+- **Projects** — milestones, status tracking, deadlines, linked files/links
+- **Tasks** — Kanban board with drag-and-drop and priority levels
+- **Calendar** — month/week/day views, meetings and deep work blocks
+- **Time Tracker** — live timer, daily/weekly/monthly totals
+- **Finance** — invoices, expenses, revenue/profit tracking
+- **Knowledge Hub** — SOPs, templates, meeting notes, searchable
+- **Analytics** — real-time dashboard pulling from all modules
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- Tailwind CSS v4
+- Supabase (Auth, Database, Row-Level Security)
+- Recharts
+- Deployed on Vercel
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+Create a \`.env.local\` file with:
+
+\`\`\`
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+\`\`\`
+
+## License
+
+Personal project.
